@@ -11,7 +11,7 @@ Simple pastebin / github gist clone with sqlite database.
 
 
 ### Installation
-  1. Download the file from [release page](https://github.com/esyede/fuzzy/releases).
+  1. Download the file from [release page](https://github.com/esyede/gists/releases).
   2. Add your application key to `config.php` file.
   3. Rename `sample.htaccess` to `.htaccess` if you prefer pretty url.
 

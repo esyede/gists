@@ -1,0 +1,148 @@
+html {
+    height: 60%;
+    margin: 0;
+}
+body {
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    padding: 5%;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #333333;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+a {
+    color: black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-top: 0.2rem;
+}
+
+#left {
+    float: left;
+    margin-bottom: 1rem;
+}
+
+#right {
+    float: right;
+    margin-bottom: 1rem;
+}
+
+#error {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: red;
+    font-weight: bold;
+}
+
+button {
+    background-color: #6c6c6c;
+    color: white;
+    padding: .375rem .75rem;
+    border: 2px solid #6c6c6c;
+    border-radius: .25rem;
+    margin-left: 0.5rem;
+}
+
+button:hover {
+    background-color: #4c4c4c;
+    border-color: #4c4c4c;
+    cursor: pointer;
+}
+
+select {
+    background-color: inherit;
+    padding: .375rem .75rem;
+    border: 1px solid #6c6c6c;
+    border-radius: .25rem;
+    color: inherit;
+}
+
+button:active,
+select:active {
+    outline: none;
+    box-shadow: 0 0 1pt 1pt lightblue;
+}
+button:focus,
+select:focus {
+    outline: none;
+}
+
+form {
+    height: 75%;
+}
+
+input {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+textarea {
+    position: relative;
+    width: calc(100% - 2rem);
+    min-height: calc(100% - 6rem);
+    resize: vertical;
+    border: 1px solid gray;
+    padding: 1rem;
+    outline: none;
+    font-family: monospace;
+    line-height: 1.5;
+    color: inherit;
+}
+textarea:focus {
+    box-shadow: 0 0 1pt 1pt lightblue;
+}
+
+pre {
+    margin: 1.5rem 0 0 0 !important;
+    padding: 1rem !important;
+    width: calc(100% - 2rem) !important;
+    min-height: calc(75% - 6rem) !important;
+    color: black;
+    overflow-y: auto;
+    border-radius: 0 !important;
+    line-height: 1.5 !important;
+    color: inherit;
+}
+
+.wrap {
+    white-space: pre-wrap;
+}
+
+#footer {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    #left, #right {
+        display: inherit;
+        float: none;
+    }
+
+    textarea, pre {
+      min-height: calc(100% - 9rem);
+    }
+
+    li {
+        width: 100%;
+    }
+}

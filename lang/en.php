@@ -3,13 +3,13 @@
 defined('DS') or exit('No direct access.');
 
 return [
-    'back_home' => 'Back to Home',
+    'back_home' => 'Back to Front',
     'back_home_href' => 'https://esyede.my.id',
     'footer_text' => 'Made with &#10084; in Indonesia',
-    'never_expired' => 'Never exipred',
-    'already_expired' => 'Paste exipred',
-    'one_time_gist' => 'One time gist',
-    'expired_in' => 'Expired in:',
+    'never_expired' => 'Never exipres',
+    'already_expired' => 'Gist exipred',
+    'one_time_gist' => 'One time',
+    'expired_in' => 'Expires in:',
     'months' => 'months',
     'weeks' => 'weeks',
     'days' => 'days',

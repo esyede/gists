@@ -3,11 +3,10 @@
 defined('DS') or exit('No direct access.');
 
 return [
-    'back_home' => 'Kembali ke Rumah',
-    'back_home_href' => 'https://esyede.my.id',
+    'back_home' => 'Kembali ke Depan',
     'footer_text' => 'Dibuat dengan &#10084; di Indonesia',
     'never_expired' => 'Selalu aktif',
-    'already_expired' => 'Paste kadaluwarsa',
+    'already_expired' => 'Gist kadaluwarsa',
     'one_time_gist' => 'Sekali dilihat',
     'expired_in' => 'Kadaluwarsa dalam:',
     'months' => 'bulan',

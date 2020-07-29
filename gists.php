@@ -76,7 +76,7 @@ final class Gists
 
         echo '<div id="footer">';
         echo $this->language['footer_text'];
-        echo '<p><a href="'.$this->language['back_home_href'].'">'.$this->language['back_home'].'</a></p>';
+        echo '<p><a href="./">'.$this->language['back_home'].'</a></p>';
         echo '</div>';
         echo '</body>';
         echo '</html>';

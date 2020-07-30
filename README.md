@@ -15,6 +15,17 @@ Simple pastebin / github gist clone with sqlite database.
   2. Add your application key to `config.php` file.
   3. Rename `sample.htaccess` to `.htaccess` if you prefer pretty url.
 
+### Housekeeping
+By default, any expired gist won't be removed. You need to remove it manually by visiting this link:
+```
+https://yoursite.com/path/to/gists/?sweep=vJ0cJiA6kcua
+
+// or,
+
+https://yoursite.com/path/to/gists/index.php?sweep=vJ0cJiA6kcua
+```
+Where `vJ0cJiA6kcua` is your application key (must be identical to your `app_key` config).
+
 
 That's pretty much it. Thank you for stopping by!
 

@@ -282,10 +282,8 @@ final class Gists
 
     public function sweep()
     {
-        if (PHP_SAPI == 'cli') {
-            $this->pdo->exec("delete from `gists` where expiry > 0 and strftime('%s','now') > expiry;");
-            $this->pdo->exec("delete from `users` where strftime('%s','now') > waiting;");
-        }
+        $this->pdo->exec("delete from `gists` where expiry > 0 and strftime('%s','now') > expiry;");
+        $this->pdo->exec("delete from `users` where strftime('%s','now') > waiting;");
     }
 
     public function destroy()

@@ -293,15 +293,18 @@ final class Gists
 
     public static function uniqid($length = 16)
     {
-        $string = '';
-
-        while (($len = strlen($string)) < $length) {
-            $size = $length - $len;
-            $bytes = openssl_random_pseudo_bytes($size);
-            $string .= substr(str_replace(['/', '+', '='], '', \base64_encode($bytes)), 0, $size);
+        $bytes = '';
+        $wide = strlen($bytes);
+        
+        for ($i = 0; $i < $length; $i++) {
+            if ($i < $wide) {
+                $bytes[$i] = $bytes[$i] ^ chr(mt_rand(0, 255));
+            } else {
+                $bytes .= chr(mt_rand(0, 255));
+            }
         }
 
-        return $string;
+        return substr(str_replace(['/', '+', '='], '', base64_encode($bytes)), 0, $length);
     }
 
     public function language($language)

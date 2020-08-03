@@ -5,7 +5,6 @@ Simple pastebin / github gist clone with sqlite database.
 
 ### Requirements
   - PHP 5.4 or newer
-  - OpenSSL extension
   - PDO extension for SQLite
 
 

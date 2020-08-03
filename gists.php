@@ -163,7 +163,7 @@ final class Gists
         return time() + (int) (pow($degree, 2.5));
     }
 
-    private function nospammer()
+    private function guard()
     {
         $hash = sha1($_SERVER['REMOTE_ADDR']);
 
@@ -192,7 +192,7 @@ final class Gists
 
     public function make($expiry, $prettify, $wrap, $data)
     {
-        $this->nospammer();
+        $this->guard();
 
         $expiry = (int) $expiry;
 
@@ -257,6 +257,7 @@ final class Gists
                 echo $result['data'];
                 exit;
             }
+            
             header('Content-Type: text/html; charset=utf-8');
 
             if ($result['prettify']) {

@@ -19,11 +19,11 @@ By default, any expired gist won't be removed. You need to remove it manually by
 ```
 https://yoursite.com/path/to/gists/?sweep=vJ0cJiA6kcua
 
-// or,
+// or, if you aren't using pretty url:
 
 https://yoursite.com/path/to/gists/index.php?sweep=vJ0cJiA6kcua
 ```
-Where `vJ0cJiA6kcua` is your application key (must be identical to your `app_key` config).
+Where `vJ0cJiA6kcua` is your application key (can be found in `config.php` file).
 
 
 That's pretty much it. Thank you for stopping by!
